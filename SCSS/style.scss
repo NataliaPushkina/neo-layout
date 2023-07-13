@@ -1,0 +1,144 @@
+@import "./fonts.scss";
+
+$text-header-color: #1c1c1e;
+$text-nav-color: #1d1929;
+$active-link: #b2a35f;
+$main-btn-color: #003cff;
+$text-features-color: #4f5665;
+
+%font-ubuntu {
+  font-family: "Ubuntu", "Arial", sans-serif;
+}
+%font-rubik {
+    font-family: "Rubik", "Arial", sans-serif;
+  }
+
+@mixin section-width {
+  box-sizing: border-box;
+  max-width: 1300px;
+  padding: 0 40px;
+  margin: 0 auto;
+}
+
+body {
+  margin: 0 auto;
+  padding: 0;
+  @extend %font-ubuntu;
+  background: #f5f4ff;
+  width: 100%;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+.header {
+  @include section-width;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  padding: 16px 40px;
+
+  &__logo {
+    color: #b4387a;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 112%;
+    letter-spacing: 0.48px;
+  }
+  &__nav-list {
+    display: flex;
+    gap: 40px;
+  }
+  &__nav-link {
+    color: $text-nav-color;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 112%;
+    letter-spacing: 0.32px;
+    &:hover {
+      color: $active-link;
+    }
+  }
+}
+
+.button {
+  background-color: $main-btn-color;
+  border-radius: 16px;
+  color: #fff;
+  padding: 8px;
+  text-align: center;
+  font-size: 16px;
+  line-height: 112%;
+  letter-spacing: 0.32px;
+  font-weight: 700;
+  border: none;
+  @extend %font-ubuntu;
+  cursor: pointer;
+}
+
+.promo {
+  @include section-width;
+  margin: 155px auto 112px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  &__title {
+    margin: 0 0 36px 0;
+    color: $text-header-color;
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 50px;
+    width: 100%;
+    max-width: 622px;
+  }
+  &__image-container {
+    display: grid;
+    grid-template-columns: repeat(2, 250px);
+    gap: 16px;
+  }
+}
+
+.features {
+  @include section-width;
+  @extend %font-rubik;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 74px;
+  &__image {
+    background: url("../images/features.png") no-repeat;
+    width: 508px;
+    height: 415px;
+    background-size: cover;
+  }
+  &__title {
+    color: $text-features-color;
+    font-size: 35px;
+    font-weight: 500;
+    line-height: 50px;
+  }
+  &__subtitle {
+    color: $text-features-color;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 30px;
+  }
+  &__item {
+    color: $text-features-color;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 30px;
+    & svg {
+      margin-right: 16px;
+    }
+  }
+}
