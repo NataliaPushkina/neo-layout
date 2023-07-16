@@ -1,0 +1,95 @@
+$text-header-color: #1c1c1e;
+$text-nav-color: #1d1929;
+$active-link: #b2a35f;
+$main-btn-color: #003cff;
+$text-features-color: #4f5665;
+$bg-hover: #7796c0;
+
+%font-ubuntu {
+  font-family: "Ubuntu", "Arial", sans-serif;
+}
+%font-rubik {
+  font-family: "Rubik", "Arial", sans-serif;
+}
+%font-nunito {
+  font-family: "Nunito Sans", "Arial", sans-serif;
+}
+
+$desktop: 1300px;
+$tablet: 920px;
+$mobile: 500px;
+
+@mixin section-width {
+  box-sizing: border-box;
+  max-width: 1320px;
+  padding: 0 20px;
+  margin: 0 auto;
+}
+
+body {
+  margin: 0 auto;
+  padding: 0;
+  @extend %font-ubuntu;
+  background: #f5f4ff;
+  width: 100%;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+.button {
+  background-color: $main-btn-color;
+  border-radius: 16px;
+  color: #fff;
+  padding: 16px;
+  text-align: center;
+  font-size: 16px;
+  line-height: 112%;
+  letter-spacing: 0.32px;
+  font-weight: 700;
+  border: none;
+  @extend %font-ubuntu;
+  cursor: pointer;
+  &:hover,
+  &:disabled {
+    background: $bg-hover;
+  }
+}
+
+.link {
+  color: inherit;
+  &:hover {
+    color: $active-link;
+  }
+}
+
+.section {
+  @include section-width;
+  @extend %font-ubuntu;
+  margin: 48px auto 0;
+  box-sizing: border-box;
+}
+
+.section__title {
+  color: $text-header-color;
+  text-align: center;
+  font-size: 30px;
+  font-weight: 500;
+  line-height: 50px;
+  margin: 0;
+}
+
+.section__subtitle {
+  margin: 8px 0 0;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 50px;
+  text-align: center;
+}
