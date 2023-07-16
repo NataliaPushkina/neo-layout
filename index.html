@@ -1,0 +1,403 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>NeoBank</title>
+    <meta name="author" content="Natalia Pushkina" />
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <header class="header">
+      <a href="#!" class="header__logo">NeoBank</a>
+      <nav class="header__nav">
+        <ul class="header__nav-list">
+          <li class="header__nav-item">
+            <a class="header__nav-link" href="#!">Credit card</a>
+          </li>
+          <li class="header__nav-item">
+            <a class="header__nav-link" href="#!">Product</a>
+          </li>
+          <li class="header__nav-item">
+            <a class="header__nav-link" href="#!">Account</a>
+          </li>
+          <li class="header__nav-item">
+            <a class="header__nav-link" href="#!">Resources</a>
+          </li>
+        </ul>
+      </nav>
+      <button type="button" class="button">Online Bank</button>
+
+      <div class="burger">
+        <span class="burger__line burger__line_first"></span>
+        <span class="burger__line burger__line_second"></span>
+        <span class="burger__line burger__line_third"></span>
+      </div>
+
+      <section class="burger-menu">
+        <div class="burger-menu__container">
+          <div class="burger-menu__content">
+            <ul class="burger-menu__list">
+              <li class="burger-menu__item">
+                <a class="burger-menu__link" href="#!">Credit card</a>
+              </li>
+              <li class="burger-menu__item">
+                <a class="burger-menu__link" href="#!">Product</a>
+              </li>
+              <li class="burger-menu__item">
+                <a class="burger-menu__link" href="#!">Account</a>
+              </li>
+              <li class="burger-menu__item">
+                <a class="burger-menu__link" href="#!">Resources</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="burger__close">
+          <span class="burger__close-line burger__close-line_first"></span>
+          <span class="burger__close-line burger__close-line_second"></span>
+        </div>
+      </section>
+    </header>
+
+    <section class="promo">
+      <div class="promo__content">
+        <h2 class="promo__title">
+          Choose the design you like and apply for card right now
+        </h2>
+        <button type="button" class="button">Choose the card</button>
+      </div>
+      <div class="promo__image-container">
+        <img
+          src="./images/cardImage1.png"
+          alt="card image"
+          class="promo__image"
+        />
+        <img
+          src="./images/cardImage2.png"
+          alt="card image"
+          class="promo__image"
+        />
+        <img
+          src="./images/cardImage3.png"
+          alt="card image"
+          class="promo__image"
+        />
+        <img
+          src="./images/cardImage4.png"
+          alt="card image"
+          class="promo__image"
+        />
+      </div>
+    </section>
+
+    <section class="features">
+      <div class="features__image"></div>
+      <article class="features__content">
+        <h2 class="features__title">We Provide Many Features You Can Use</h2>
+        <p class="features__subtitle">
+          You can explore the features that we provide with fun and have their
+          own functions each feature
+        </p>
+        <ul class="features__list" role="list">
+          <li class="features__item">
+            <svg
+              id="listItem"
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              fill="none"
+            >
+              <path
+                d="M12 2C6.486 2 2 6.486 2 12C2 17.514 6.486 22 12 22C17.514 22 22 17.514 22 12C22 6.486 17.514 2 12 2ZM10.001 16.413L6.99545 13.4139C6.6047 13.024 6.60391 12.3912 6.99369 12.0003C7.38371 11.6092 8.01701 11.6085 8.40793 11.9987L9.999 13.587L14.586 9C14.9765 8.60953 15.6095 8.60953 16 9C16.3905 9.39047 16.3905 10.0235 16 10.414L10.001 16.413Z"
+                fill="#2FAB73"
+              />
+            </svg>
+            Powerfull online protection.
+          </li>
+          <li class="features__item">
+            <svg width="24" height="24">
+              <use href="#listItem" />
+            </svg>
+            Cashback without borders.
+          </li>
+          <li class="features__item">
+            <svg width="24" height="24">
+              <use href="#listItem" />
+            </svg>
+            Personal design
+          </li>
+          <li class="features__item">
+            <svg width="24" height="24">
+              <use href="#listItem" />
+            </svg>
+            Work anywhere in the world
+          </li>
+        </ul>
+      </article>
+    </section>
+
+    <section class="exchange">
+      <div class="exchange__container">
+        <h2 class="exchange__title">Exchange rate in internet bank</h2>
+        <p class="exchange__subtitle">
+          Update every 15 minutes, MSC 09.08.2022
+        </p>
+      </div>
+      <div class="exchange__container">
+        <table class="exchange__table">
+          <caption class="exchange__table-title">
+            Currency
+          </caption>
+          <tr class="exchange__table-row">
+            <td class="exchange__table-item">USD:</td>
+            <td class="exchange__table-item">60.78</td>
+            <td class="exchange__table-item">CNY:</td>
+            <td class="exchange__table-item">9.08</td>
+            <td class="exchange__table-item">CHF:</td>
+            <td class="exchange__table-item">64.78</td>
+          </tr>
+          <tr class="exchange__table-row">
+            <td class="exchange__table-item">USD:</td>
+            <td class="exchange__table-item">60.78</td>
+            <td class="exchange__table-item">JPY:</td>
+            <td class="exchange__table-item">0.46</td>
+            <td class="exchange__table-item">TRY:</td>
+            <td class="exchange__table-item">3.39</td>
+          </tr>
+        </table>
+        <svg
+          class="exchange__image"
+          xmlns="http://www.w3.org/2000/svg"
+          width="120"
+          height="113"
+          viewBox="0 0 120 113"
+          fill="none"
+        >
+          <path
+            d="M115.936 94.1348V82.6425H107.561V40.4421H115.936V19.631H108.969L60 0L11.0311 19.631H4.0643V40.4421H12.4385V82.6423H4.0643V94.1346H0V112.758H120V94.1346H115.936V94.1348ZM60 7.68258L89.8055 19.6313H30.1945L60 7.68258ZM11.1952 33.3115V26.7621H108.805V33.3115H107.561H88.8799H82.0809H63.3994H56.6004H37.9188H31.1198H12.4385H11.1952ZM100.431 40.4421V82.6423H96.0108V40.4421H100.431ZM88.8799 40.4421V82.6423H82.0809V40.4421H88.8799ZM74.9503 40.4421V82.6423H70.5305V40.4421H74.9503ZM63.3996 40.4421V82.6423H56.6006V40.4421H63.3996ZM49.4698 40.4421V82.6423H45.0499V40.4421H49.4698ZM37.9188 40.4421V82.6423H31.1198V40.4421H37.9188ZM23.9892 40.4421V82.6423H19.5694V40.4421H23.9892ZM11.1952 89.7734H12.4385H31.1201H37.9191H56.6006H63.3996H82.0812H88.8801H107.562H108.805V94.1348H11.1952V89.7734ZM112.869 105.627H7.13086V101.265H112.869V105.627Z"
+            fill="black"
+          />
+        </svg>
+      </div>
+      <a href="#!" class="exchange__link">All courses</a>
+    </section>
+
+    <section class="section map">
+      <h2 class="section__title">
+        You can use our services anywhere in the world
+      </h2>
+      <p class="section__subtitle">
+        Withdraw and transfer money online through our application
+      </p>
+      <div class="map__image"></div>
+    </section>
+
+    <section class="section news">
+      <h2 class="section__title">Current news from the world of finance</h2>
+      <p class="section__subtitle">
+        We update the news feed every 15 minutes. You can learn more by clicking
+        on the news you are interested in.
+      </p>
+      <ul class="news__container">
+        <li class="news__item">
+          <article class="news__card">
+            <img src="./images/demo.png" class="news__card-image" />
+            <h3 class="news__card-title">
+              Ethereum just pulled off its final test run ahead of one of the
+              most important events in crypto - CN
+            </h3>
+            <p class="news__card-text">
+              Ethereum is moving closer to adopting a proof-of-stake model for
+              its network, which is less energy i
+            </p>
+          </article>
+        </li>
+        <li class="news__item">
+          <article class="news__card">
+            <img src="./images/demo2.png" class="news__card-image" />
+            <h3 class="news__card-title">
+              Jim Cramer explains what Wednesday's market action reveals about
+              the state of inflation - CNBC Telev
+            </h3>
+            <p class="news__card-text">
+              The "Mad Money" host gave his take on what the market action on
+              Wednesday suggests about inflation's
+            </p>
+          </article>
+        </li>
+        <li class="news__item">
+          <article class="news__card">
+            <img src="./images/demo.png" class="news__card-image" />
+            <h3 class="news__card-title">
+              Ethereum just pulled off its final test run ahead of one of the
+              most important events in crypto - CN
+            </h3>
+            <p class="news__card-text">
+              Ethereum is moving closer to adopting a proof-of-stake model for
+              its network, which is less energy i
+            </p>
+          </article>
+        </li>
+        <li class="news__item">
+          <article class="news__card">
+            <img src="./images/demo2.png" class="news__card-image" />
+            <h3 class="news__card-title">
+              Jim Cramer explains what Wednesday's market action reveals about
+              the state of inflation - CNBC Telev
+            </h3>
+            <p class="news__card-text">
+              The "Mad Money" host gave his take on what the market action on
+              Wednesday suggests about inflation's
+            </p>
+          </article>
+        </li>
+      </ul>
+      <div class="news__buttons">
+        <button type="button" class="news__btn news__btn_left">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="25"
+            height="26"
+            viewBox="0 0 25 26"
+            fill="none"
+          >
+            <path
+              d="M25 17H9.84211V24.3914C9.84211 24.5845 9.59562 24.6655 9.48109 24.5101L1 13L9.48109 1.48994C9.59562 1.33452 9.84211 1.41552 9.84211 1.60858V9H25"
+              stroke="#222222"
+            />
+          </svg>
+        </button>
+        <button type="button" class="news__btn news__btn_right">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="25"
+            height="26"
+            viewBox="0 0 25 26"
+            fill="none"
+          >
+            <path
+              d="M0 9H15.1579V1.60858C15.1579 1.41552 15.4044 1.33452 15.5189 1.48994L24 13L15.5189 24.5101C15.4044 24.6655 15.1579 24.5845 15.1579 24.3914V17H0"
+              stroke="white"
+            />
+          </svg>
+        </button>
+      </div>
+    </section>
+
+    <section class="menu">
+      <ul class="menu__list">
+        <li class="menu__item">
+          <a class="link menu__link" href="#!">Support</a>
+        </li>
+        <li class="menu__item">
+          <a class="link menu__link" href="#!">Subscribe Newsletter &&nbspget</a>
+        </li>
+        <li class="menu__item">
+          <a class="link menu__link" href="#!">Bank News</a>
+        </li>
+      </ul>
+      <div class="menu__input-container">
+        <input class="menu__input" type="email" placeholder="Your email" />
+
+        <svg
+          class="menu__input-icon"
+          width="29"
+          height="38"
+          viewBox="0 0 29 38"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M18.7798 19.1104L28.1806 27.0882V10.7957L18.7798 19.1104Z"
+            fill="#9092B0"
+          />
+          <path
+            d="M0.29538 10.7957V27.0882L9.69619 19.1104L0.29538 10.7957Z"
+            fill="#9092B0"
+          />
+          <path
+            d="M26.4378 6.05127H2.0382C1.16853 6.05127 0.478368 6.92158 0.347656 8.04222L14.238 20.3272L28.1283 8.04222C27.9976 6.92158 27.3075 6.05127 26.4378 6.05127Z"
+            fill="#9092B0"
+          />
+          <path
+            d="M17.1831 20.5236L14.717 22.704C14.5706 22.8327 14.4051 22.8959 14.2378 22.8959C14.0705 22.8959 13.9049 22.8327 13.7585 22.704L11.2924 20.5212L0.350922 29.8116C0.485119 30.9229 1.17179 31.7861 2.03798 31.7861H26.4376C27.3037 31.7861 27.9904 30.9229 28.1246 29.8116L17.1831 20.5236Z"
+            fill="#9092B0"
+          />
+        </svg>
+
+        <button type="button" class="button menu__button">
+          Subscribe
+          <!-- <div class="menu__icon"></div> -->
+        </button>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <div class="footer__section">
+        <div class="footer__container">
+          <img class="footer__logo" src="./images/logo.png" alt="logo" />
+          <address class="footer__contacts">
+            <ul>
+              <li class="footer__contact-item">
+                <a class="footer__contact-link_tel" href="tel:+74959842513"
+                  >+7 (495) 984 25 13</a
+                >
+              </li>
+              <li class="footer__contact-item">
+                <a
+                  class="footer__contact-link_email"
+                  href="mailto:info@neoflex.ru"
+                  >info@neoflex.ru</a
+                >
+              </li>
+            </ul>
+          </address>
+        </div>
+
+        <ul class="footer__nav-list">
+          <li class="footer__nav-item">
+            <a class="footer__nav-link" href="#!">About bank</a>
+          </li>
+          <li class="footer__nav-item">
+            <a class="footer__nav-link" href="#!">Ask a Question</a>
+          </li>
+          <li class="footer__nav-item">
+            <a class="footer__nav-link" href="#!">Quality of service </a>
+          </li>
+          <li class="footer__nav-item">
+            <a class="footer__nav-link" href="#!">Requisites</a>
+          </li>
+          <li class="footer__nav-item">
+            <a class="footer__nav-link" href="#!">Press center</a>
+          </li>
+          <li class="footer__nav-item">
+            <a class="footer__nav-link" href="#!">Bank career</a>
+          </li>
+          <li class="footer__nav-item">
+            <a class="footer__nav-link" href="#!">Investors</a>
+          </li>
+          <li class="footer__nav-item">
+            <a class="footer__nav-link" href="#!">Analytics</a>
+          </li>
+          <li class="footer__nav-item">
+            <a class="footer__nav-link" href="#!">Business and processes</a>
+          </li>
+          <li class="footer__nav-item">
+            <a class="footer__nav-link" href="#!"
+              >Compliance and business ethics</a
+            >
+          </li>
+        </ul>
+        <p class="footer__info">
+          We use cookies to personalize our services and improve the user
+          experience of our website. Cookies are small files containing
+          information about previous visits to a website. If you do not want to
+          use cookies, please change your browser settings
+        </p>
+      </div>
+    </footer>
+    <script src="index.js"></script>
+  </body>
+</html>
